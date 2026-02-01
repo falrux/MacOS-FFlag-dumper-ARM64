@@ -2,37 +2,61 @@
 ### Simplified Static MacOS Roblox FFlag dumper, for usage with Intel roblox builds.
 `>> supports both intel and arm64 macs <<`
 
-## Prerequisits:
-**ARM64 / Silicon:**
+## Prerequisites
+
+**1. Install Command Line Tools (Required for everyone):**
+```bash
+xcode-select --install
 ```
+
+**2. Set up x86_64 Homebrew:**
+*If you are on **Apple Silicon (M1/M2/M3)**, you likely only have the arm64 Homebrew. You must install the x86_64 version separately to compile this tool.*
+
+**ARM64 / Silicon:**
+First, ensure Rosetta is installed:
+```bash
+softwareupdate --install-rosetta
+```
+Then install x86 Homebrew:
+```bash
+arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+**Intel:**
+*(Skip this if you already have Homebrew)*
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+**3. Install Dependencies:**
+**ARM64 / Silicon:**
+```bash
 arch -x86_64 /usr/local/bin/brew install capstone curl
 ```
 **Intel:**
-```
+```bash
 brew install capstone curl
 ```
-If you dont have homebrew, or compiler tools use the following before anything else:
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-```
-xcode-select --install
-```
-# Building / Usage
-## Build arm64 / silicon:
-```
-arch -x86_64 clang++ -O3 -std=c++17 -target x86_64-apple-darwin main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
+
+---
+
+# Building
+**ARM64 / Silicon:**
+```bash
+arch -x86_64 clang++ -O3 -std=c++17 -target x86_64-apple-darwin main.cpp -o dumpfflags -I/usr/local/include -L/usr/local/lib -lcapstone -lcurl
 ```
 
-## Build Intel:
+**Intel:**
+```bash
+clang++ -O3 -std=c++17 -target x86_64-apple-darwin main.cpp -o dumpfflags -I/usr/local/include -L/usr/local/lib -lcapstone -lcurl
 ```
-clang++ -O3 -std=c++17 -target x86_64-apple-darwin main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
-```
-## Universal run:
-args: roblox_binary_path > output_file
-```
+
+# Usage
+**Universal run:**
+*Args: roblox_binary_path > output_file*
+```bash
 ./dumpfflags /Applications/Roblox.app/Contents/MacOS/RobloxPlayer > fflags.hpp
 ```
-*The output file is created automatically*
+*The output file is created automatically.*
 
 Any problems / errors lmk on discord **physics1514_**
