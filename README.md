@@ -28,3 +28,9 @@ arch -x86_64 clang++ -O3 -std=c++17 -target x86_64-apple-darwin \main.cpp -o dum
 ```
 clang++ -O3 -std=c++17 -target x86_64-apple-darwin \main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
 ```
+## Universal run:
+args: roblox_binary_path > output_file
+```
+./dumpfflags /Applications/Roblox.app/Contents/MacOS/RobloxPlayer > fflags.hpp
+```
+*The output file is created automatically*
