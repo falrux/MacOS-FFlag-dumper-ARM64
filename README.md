@@ -1,5 +1,5 @@
-# Waddotrons fflag dumper
-### Simplified MacOS Roblox FFlag dumper, for usage with Intel roblox builds.
+# Waddotrons FFlag dumper
+### Simplified Static MacOS Roblox FFlag dumper, for usage with Intel roblox builds.
 `>> supports both intel and arm64 macs <<`
 
 ## Prerequisits:
