@@ -2,7 +2,7 @@
 ### Simplified MacOS Roblox FFlag dumper, for usage with Intel roblox builds.
 `>> supports both intel and arm64 macs <<`
 
-### Prerequisits:
+## Prerequisits:
 **ARM64 / Silicon:**
 ```
 arch -x86_64 /usr/local/bin/brew install capstone curl
@@ -18,13 +18,13 @@ If you dont have homebrew, or compiler tools use the following before anything e
 ```
 xcode-select --install
 ```
-
-### Build arm64 / silicon:
+# Building / Usage
+## Build arm64 / silicon:
 ```
 arch -x86_64 clang++ -O3 -std=c++17 -target x86_64-apple-darwin \main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
 ```
 
-### Build Intel:
+## Build Intel:
 ```
 clang++ -O3 -std=c++17 -target x86_64-apple-darwin \main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
 ```
