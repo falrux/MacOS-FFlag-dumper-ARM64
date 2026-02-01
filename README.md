@@ -21,12 +21,12 @@ xcode-select --install
 # Building / Usage
 ## Build arm64 / silicon:
 ```
-arch -x86_64 clang++ -O3 -std=c++17 -target x86_64-apple-darwin \main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
+arch -x86_64 clang++ -O3 -std=c++17 -target x86_64-apple-darwin main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
 ```
 
 ## Build Intel:
 ```
-clang++ -O3 -std=c++17 -target x86_64-apple-darwin \main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
+clang++ -O3 -std=c++17 -target x86_64-apple-darwin main.cpp -o dumpfflags -L/usr/local/lib -lcapstone -lcurl
 ```
 ## Universal run:
 args: roblox_binary_path > output_file
