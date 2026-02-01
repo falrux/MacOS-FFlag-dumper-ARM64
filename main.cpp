@@ -119,7 +119,7 @@ int main(int argc, char** argv) {
     }
 
     // find the function that registers all fflags
-    // adrp + add that reso;ves to the string address
+    // adrp + add that resolves to the string address
     uint64_t registerFuncAddr = 0;
     uint8_t* textStart = g_Data + g_TextFileOff;
     
