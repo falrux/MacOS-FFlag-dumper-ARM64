@@ -1,4 +1,4 @@
-# Waddotrons fflag dumper ( physics1514_ discord )
+# Waddotrons fflag dumper
 ### Simplified MacOS Roblox FFlag dumper, for usage with Intel roblox builds.
 `>> supports both intel and arm64 macs <<`
 
@@ -34,3 +34,5 @@ args: roblox_binary_path > output_file
 ./dumpfflags /Applications/Roblox.app/Contents/MacOS/RobloxPlayer > fflags.hpp
 ```
 *The output file is created automatically*
+
+Any problems / errors lmk on discord **physics1514_**
