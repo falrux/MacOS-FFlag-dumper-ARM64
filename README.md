@@ -3,6 +3,11 @@
 >> supports both intel and arm64 macs <<
 
 ### Prerequisits:
+**ARM64 / Silicon:**
+```
+arch -x86_64 /usr/local/bin/brew install capstone curl
+```
+**Intel:**
 ```
 brew install capstone curl
 ```
