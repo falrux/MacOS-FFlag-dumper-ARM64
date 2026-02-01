@@ -4,6 +4,8 @@
 ### Simplified Static MacOS Roblox FFlag dumper, for usage with Silicon roblox builds.
 `this is ONLY for arm64/siicon, for intel go to the original repo`
 
+### - I was originally making an fflags dumper for arm64 myself until somebody told me this repo came out, so i decided to help out and add native arm64 support from my version
+
 ## Prerequisites (ARM64/SILICON ONLY)
 
 **1. Install Command Line Tools:**
