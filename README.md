@@ -1,6 +1,6 @@
 # Waddotrons fflag dumper ( physics1514_ discord )
 ### Simplified MacOS Roblox FFlag dumper, for usage with Intel roblox builds.
->> supports both intel and arm64 macs <<
+`>> supports both intel and arm64 macs <<`
 
 ### Prerequisits:
 **ARM64 / Silicon:**
