@@ -35,4 +35,4 @@ clang++ -O3 -std=c++17 -target arm64-apple-darwin main.cpp -o dumpfflags -I/opt/
 
 ---
 - If you need help or any issues accour, contact me on discord: (DSC: **falrux**)
-- Credits to the original creator, he's a very cool guy (DSC: **p@hysics1514_**)
+- Credits to the original creator, he's a very cool guy (DSC: **physics1514_**)
